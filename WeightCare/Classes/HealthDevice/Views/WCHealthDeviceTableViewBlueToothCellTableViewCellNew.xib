@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WCHealthDeviceTableViewBlueToothCellTableViewCellNew">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="419.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuA-FI-fs6" userLabel="BlueTView">
+                        <rect key="frame" x="18" y="0.0" width="338" height="401"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="354-VW-hwN" userLabel="HeadView">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="76"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Combined Shape-1" translatesAutoresizingMaskIntoConstraints="NO" id="dzz-hF-yrc">
+                                        <rect key="frame" x="20" y="19" width="39" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="EJO-gx-tLj"/>
+                                            <constraint firstAttribute="width" constant="39" id="lDr-X7-D2J"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前连接设备：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hus-Zq-AGS">
+                                        <rect key="frame" x="82" y="27" width="112" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="TTa-42-BGR"/>
+                                            <constraint firstAttribute="height" constant="21" id="Zgm-Nz-m65"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.31372549019607843" green="0.69019607843137254" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM8-MX-ijN">
+                                        <rect key="frame" x="192" y="27" width="39.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="FcQ-x2-CrT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.31372549019607843" green="0.69019607843137254" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dzz-hF-yrc" firstAttribute="leading" secondItem="354-VW-hwN" secondAttribute="leading" constant="20" id="5Ae-R8-qNz"/>
+                                    <constraint firstItem="Hus-Zq-AGS" firstAttribute="leading" secondItem="dzz-hF-yrc" secondAttribute="trailing" constant="23" id="7lJ-jl-6LP"/>
+                                    <constraint firstItem="jM8-MX-ijN" firstAttribute="centerY" secondItem="Hus-Zq-AGS" secondAttribute="centerY" id="IfP-1D-Pan"/>
+                                    <constraint firstItem="jM8-MX-ijN" firstAttribute="leading" secondItem="Hus-Zq-AGS" secondAttribute="trailing" constant="-2" id="Q5f-af-dWW"/>
+                                    <constraint firstAttribute="height" constant="76" id="fB4-X1-8LO"/>
+                                    <constraint firstItem="Hus-Zq-AGS" firstAttribute="centerY" secondItem="354-VW-hwN" secondAttribute="centerY" id="kn4-Pj-lMv"/>
+                                    <constraint firstItem="dzz-hF-yrc" firstAttribute="centerY" secondItem="354-VW-hwN" secondAttribute="centerY" id="vXH-m0-ewv"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-m9-oUp">
+                                <rect key="frame" x="0.0" y="76" width="338" height="325"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="-1" id="BeW-p0-UVn"/>
+                                    <outlet property="delegate" destination="-1" id="5Ws-Li-g4H"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fFK-m9-oUp" firstAttribute="top" secondItem="354-VW-hwN" secondAttribute="bottom" id="CPB-FK-Y3p"/>
+                            <constraint firstItem="fFK-m9-oUp" firstAttribute="leading" secondItem="NuA-FI-fs6" secondAttribute="leading" id="ItR-Vu-exb"/>
+                            <constraint firstAttribute="trailing" secondItem="fFK-m9-oUp" secondAttribute="trailing" id="MbD-eH-ud2"/>
+                            <constraint firstAttribute="height" constant="401" id="OfF-Yy-DYI"/>
+                            <constraint firstItem="354-VW-hwN" firstAttribute="top" secondItem="NuA-FI-fs6" secondAttribute="top" id="Qum-oA-ZSI"/>
+                            <constraint firstAttribute="bottom" secondItem="fFK-m9-oUp" secondAttribute="bottom" id="Yfe-xe-CSB"/>
+                            <constraint firstAttribute="trailing" secondItem="354-VW-hwN" secondAttribute="trailing" id="hJQ-2y-GUH"/>
+                            <constraint firstItem="354-VW-hwN" firstAttribute="leading" secondItem="NuA-FI-fs6" secondAttribute="leading" id="mm3-1H-2nZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="NuA-FI-fs6" secondAttribute="trailing" constant="11" id="2hv-WQ-EQX"/>
+                    <constraint firstItem="NuA-FI-fs6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="MNb-kn-rNK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="NuA-FI-fs6" secondAttribute="bottom" constant="10.5" id="RZ8-mB-iZ4"/>
+                    <constraint firstItem="NuA-FI-fs6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="TXt-Zv-y3W"/>
+                    <constraint firstItem="fFK-m9-oUp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Xgg-n4-CXA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BlueTView" destination="NuA-FI-fs6" id="lyy-Dc-X8f"/>
+                <outlet property="HDShebeiLabel" destination="jM8-MX-ijN" id="eCW-Cj-Es5"/>
+                <outlet property="HDShebeiTableViewCell" destination="fFK-m9-oUp" id="7va-iA-M7c"/>
+            </connections>
+            <point key="canvasLocation" x="279.5" y="255"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Combined Shape-1" width="39" height="39"/>
+    </resources>
+</document>

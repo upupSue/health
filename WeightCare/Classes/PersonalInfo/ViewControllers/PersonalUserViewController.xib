@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalUserViewController">
+            <connections>
+                <outlet property="PLUViewOne" destination="ox4-bc-cm8" id="f6g-NR-Ytz"/>
+                <outlet property="PLUserTextField" destination="RHy-8U-E7o" id="LB8-14-A0V"/>
+                <outlet property="view" destination="DZE-H3-Npt" id="F12-tu-Pzr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DZE-H3-Npt">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ox4-bc-cm8" userLabel="ViewOne">
+                    <rect key="frame" x="10" y="10" width="355" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PLUuser" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-tm-PCN">
+                            <rect key="frame" x="13" y="15" width="20" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="0cw-Pl-7mv"/>
+                                <constraint firstAttribute="width" constant="20" id="Cuh-Kf-tJo"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="dKY-9R-y1g"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="f1Q-8h-PmR"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="FANG_DC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RHy-8U-E7o">
+                            <rect key="frame" x="44" y="0.0" width="311" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HvG-te-xpX"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="mcb-rO-NUd"/>
+                            </constraints>
+                            <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="i1s-tm-PCN" firstAttribute="centerY" secondItem="ox4-bc-cm8" secondAttribute="centerY" id="OlH-ng-HKb"/>
+                        <constraint firstItem="RHy-8U-E7o" firstAttribute="leading" secondItem="i1s-tm-PCN" secondAttribute="trailing" constant="11" id="STw-El-9E3"/>
+                        <constraint firstAttribute="trailing" secondItem="RHy-8U-E7o" secondAttribute="trailing" id="WSG-6z-e5D"/>
+                        <constraint firstItem="i1s-tm-PCN" firstAttribute="leading" secondItem="ox4-bc-cm8" secondAttribute="leading" constant="13" id="rFH-yW-gPk"/>
+                        <constraint firstItem="RHy-8U-E7o" firstAttribute="centerY" secondItem="i1s-tm-PCN" secondAttribute="centerY" id="y5d-xj-6wI"/>
+                        <constraint firstAttribute="height" constant="50" id="zvx-vA-PFc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ox4-bc-cm8" firstAttribute="leading" secondItem="DZE-H3-Npt" secondAttribute="leading" constant="10" id="LuO-FV-sQT"/>
+                <constraint firstItem="ox4-bc-cm8" firstAttribute="top" secondItem="DZE-H3-Npt" secondAttribute="top" constant="10" id="xNL-wZ-xtL"/>
+                <constraint firstAttribute="trailing" secondItem="ox4-bc-cm8" secondAttribute="trailing" constant="10" id="zF0-Qi-kcb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="278.5" y="304.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PLUuser" width="20" height="19"/>
+    </resources>
+</document>

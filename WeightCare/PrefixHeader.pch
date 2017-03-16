@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  WeightCare
+//
+//  Created by KentonYu on 16/7/8.
+//  Copyright © 2016年 ZUSTDMT. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "WCMacro.h"
+#import "WCNotificationNameConstant.h"
+#import "WCEnumerationConstant.h"
+#import "WCThemeConstant.h"
+#import "UIApplication+WCCurrentActiveVC.h"
+#import "NSUserDefaults+Utils.h"
+#import "CocoaLumberjack.h"
+#import "IQKeyboardManager.h"
+#import "Masonry.h"
+#import "YYCategories.h"
+#import "UIAlertController+AutoHide.h"
+#import "WCBaseViewController.h"
+
+#import "NSString+Security.h"
+#import "NSUserDefaults+Utils.h"
+#import "MBProgressHUD.h"
+#import "HandlerBusiness.h"
+
+#endif /* PrefixHeader_pch */

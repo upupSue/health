@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WCPersonalSetAddressTableViewCell" id="BJm-tR-7H0" customClass="WCPersonalSetAddressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BJm-tR-7H0" id="g8w-KA-9EY">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCPSSARectangleOne" translatesAutoresizingMaskIntoConstraints="NO" id="xle-Gd-MZb">
+                        <rect key="frame" x="10" y="10" width="355" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="355" id="53W-R7-pJx"/>
+                            <constraint firstAttribute="height" constant="100" id="TvG-gu-YlG"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zj-g0-utZ" userLabel="WCPSABigButton">
+                        <rect key="frame" x="10" y="10" width="60" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="SXo-M2-xX7"/>
+                            <constraint firstAttribute="width" constant="60" id="nVy-bG-ZpJ"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="WCPSSARectangleGray"/>
+                        <connections>
+                            <action selector="WCPSABigButton:" destination="BJm-tR-7H0" eventType="touchUpInside" id="BVV-S1-EAg"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方聪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmO-N8-75j" userLabel="WCPSSANameLable">
+                        <rect key="frame" x="86" y="17" width="36" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.31372549020000001" green="0.69019607839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17826805021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-6c-CY4" userLabel="WCPSSAPhoneLable">
+                        <rect key="frame" x="158" y="17" width="113" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.31372549020000001" green="0.69019607839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="310012" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igV-Lf-CEX" userLabel="WCPSSAMailAddressLable">
+                        <rect key="frame" x="296" y="17" width="60" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.31372549020000001" green="0.69019607839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浙江省杭州市西湖区留下街道留和路318号                                  浙江科技学院小和山校区西和公寓10幢" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfG-Z1-Bdt" userLabel="WCPSSAddressLable">
+                        <rect key="frame" x="86" y="40" width="265" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="RNh-xT-UfX"/>
+                            <constraint firstAttribute="width" constant="265" id="Uyc-xF-A6e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCPSSACombined Shape" translatesAutoresizingMaskIntoConstraints="NO" id="I3S-ig-cSN" userLabel="WCPSSACheckImage">
+                        <rect key="frame" x="28" y="48" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="fvP-TV-o0F"/>
+                            <constraint firstAttribute="height" constant="24" id="tGg-Ma-9zH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="AfG-Z1-Bdt" firstAttribute="top" secondItem="igV-Lf-CEX" secondAttribute="bottom" constant="1" id="75V-zO-zt3"/>
+                    <constraint firstItem="I3S-ig-cSN" firstAttribute="centerX" secondItem="1zj-g0-utZ" secondAttribute="centerX" id="9U0-Qn-0AD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AfG-Z1-Bdt" secondAttribute="trailing" constant="16" id="9cg-T3-gKn"/>
+                    <constraint firstItem="Kad-6c-CY4" firstAttribute="centerY" secondItem="KmO-N8-75j" secondAttribute="centerY" id="9y4-RV-NJH"/>
+                    <constraint firstItem="xle-Gd-MZb" firstAttribute="top" secondItem="g8w-KA-9EY" secondAttribute="topMargin" constant="2" id="Bnn-tf-Bhe"/>
+                    <constraint firstItem="xle-Gd-MZb" firstAttribute="leading" secondItem="g8w-KA-9EY" secondAttribute="leadingMargin" constant="2" id="HgD-0P-poa"/>
+                    <constraint firstItem="xle-Gd-MZb" firstAttribute="top" secondItem="g8w-KA-9EY" secondAttribute="topMargin" constant="2" id="JSY-cz-goI"/>
+                    <constraint firstItem="I3S-ig-cSN" firstAttribute="centerY" secondItem="1zj-g0-utZ" secondAttribute="centerY" id="Jg0-Tl-nbY"/>
+                    <constraint firstItem="Kad-6c-CY4" firstAttribute="leading" secondItem="KmO-N8-75j" secondAttribute="trailing" constant="34" id="OuI-bB-i0m"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="igV-Lf-CEX" secondAttribute="trailing" constant="11" id="Qc3-09-tL3"/>
+                    <constraint firstItem="AfG-Z1-Bdt" firstAttribute="leading" secondItem="1zj-g0-utZ" secondAttribute="trailing" constant="16" id="U2C-X5-Ypl"/>
+                    <constraint firstItem="igV-Lf-CEX" firstAttribute="leading" secondItem="Kad-6c-CY4" secondAttribute="trailing" constant="10" id="VqO-7B-A2X"/>
+                    <constraint firstItem="1zj-g0-utZ" firstAttribute="top" secondItem="g8w-KA-9EY" secondAttribute="topMargin" constant="2" id="WaY-aV-tIA"/>
+                    <constraint firstItem="xle-Gd-MZb" firstAttribute="leading" secondItem="g8w-KA-9EY" secondAttribute="leadingMargin" constant="2" id="Wu2-5d-u45"/>
+                    <constraint firstItem="Kad-6c-CY4" firstAttribute="leading" secondItem="KmO-N8-75j" secondAttribute="trailing" constant="10" id="YZy-Oq-l73"/>
+                    <constraint firstItem="igV-Lf-CEX" firstAttribute="centerY" secondItem="KmO-N8-75j" secondAttribute="centerY" id="a1b-ZM-2BU"/>
+                    <constraint firstItem="igV-Lf-CEX" firstAttribute="leading" secondItem="Kad-6c-CY4" secondAttribute="trailing" constant="25" id="as1-km-8Dw"/>
+                    <constraint firstItem="Kad-6c-CY4" firstAttribute="leading" secondItem="KmO-N8-75j" secondAttribute="trailing" constant="30" id="cII-TN-0x8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xle-Gd-MZb" secondAttribute="trailing" constant="2" id="cxy-Xu-hr2"/>
+                    <constraint firstItem="KmO-N8-75j" firstAttribute="leading" secondItem="1zj-g0-utZ" secondAttribute="trailing" constant="16" id="d9w-nq-CCu"/>
+                    <constraint firstItem="igV-Lf-CEX" firstAttribute="leading" secondItem="Kad-6c-CY4" secondAttribute="trailing" constant="23" id="eRj-Fl-O8L"/>
+                    <constraint firstItem="xle-Gd-MZb" firstAttribute="top" secondItem="g8w-KA-9EY" secondAttribute="topMargin" constant="2" id="fXY-8x-WQx"/>
+                    <constraint firstItem="KmO-N8-75j" firstAttribute="top" secondItem="g8w-KA-9EY" secondAttribute="topMargin" constant="9" id="kIt-nv-mlf"/>
+                    <constraint firstItem="1zj-g0-utZ" firstAttribute="leading" secondItem="g8w-KA-9EY" secondAttribute="leadingMargin" constant="2" id="reN-O5-8zR"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Bnn-tf-Bhe"/>
+                        <exclude reference="HgD-0P-poa"/>
+                        <exclude reference="JSY-cz-goI"/>
+                        <exclude reference="OuI-bB-i0m"/>
+                        <exclude reference="YZy-Oq-l73"/>
+                        <exclude reference="cII-TN-0x8"/>
+                        <exclude reference="VqO-7B-A2X"/>
+                        <exclude reference="eRj-Fl-O8L"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="WCPSABigButton" destination="1zj-g0-utZ" id="S47-bO-sz1"/>
+                <outlet property="WCPSSACheckImage" destination="I3S-ig-cSN" id="4wW-QL-tXs"/>
+                <outlet property="WCPSSAMailLabel" destination="igV-Lf-CEX" id="SOV-en-Dco"/>
+                <outlet property="WCPSSANameLabel" destination="KmO-N8-75j" id="DWH-Qo-aBv"/>
+                <outlet property="WCPSSAPhoneLabel" destination="Kad-6c-CY4" id="ALR-l4-xyh"/>
+                <outlet property="WCPSSAddressLabel" destination="AfG-Z1-Bdt" id="bql-ne-g4d"/>
+            </connections>
+            <point key="canvasLocation" x="279.5" y="254"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="WCPSSACombined Shape" width="24" height="24"/>
+        <image name="WCPSSARectangleGray" width="60" height="100"/>
+        <image name="WCPSSARectangleOne" width="355" height="100"/>
+    </resources>
+</document>

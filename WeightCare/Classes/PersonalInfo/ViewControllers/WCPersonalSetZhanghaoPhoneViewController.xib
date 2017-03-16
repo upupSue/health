@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WCPersonalSetZhanghaoPhoneViewController">
+            <connections>
+                <outlet property="ViewOne" destination="utt-Cd-pAg" id="3Qe-ua-qMA"/>
+                <outlet property="ViewTwo" destination="STP-Gi-tck" id="Qd0-Zs-QB1"/>
+                <outlet property="WCPSSGetNumber" destination="GVt-Qc-SkL" id="meR-34-mXG"/>
+                <outlet property="WCPZHPhoneTextField" destination="XE1-ET-Nl2" id="H3n-f1-d43"/>
+                <outlet property="WCPZHYanzhengTextField" destination="f1f-Ki-fHn" id="Ced-Of-DDg"/>
+                <outlet property="view" destination="Twc-Kk-eqD" id="e1m-R2-P9U"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Twc-Kk-eqD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utt-Cd-pAg" userLabel="ViewOne">
+                    <rect key="frame" x="10" y="10" width="355" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCPSSZHPdevice-tablet" translatesAutoresizingMaskIntoConstraints="NO" id="Qbz-H6-fnA">
+                            <rect key="frame" x="11" y="15" width="17" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="17" id="5rN-Ow-TKA"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="17" id="BOZ-sv-r7G"/>
+                                <constraint firstAttribute="height" constant="20" id="S42-jV-tx6"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="dEa-uJ-Nch"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="我的手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XE1-ET-Nl2">
+                            <rect key="frame" x="44" y="0.0" width="311" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="6Yt-TS-dpi"/>
+                                <constraint firstAttribute="width" constant="280" id="bBk-0V-6fs"/>
+                                <constraint firstAttribute="height" constant="50" id="yk6-78-lCf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="bBk-0V-6fs"/>
+                                </mask>
+                            </variation>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="XE1-ET-Nl2" firstAttribute="centerY" secondItem="Qbz-H6-fnA" secondAttribute="centerY" id="YHX-Ln-pGh"/>
+                        <constraint firstItem="Qbz-H6-fnA" firstAttribute="leading" secondItem="utt-Cd-pAg" secondAttribute="leading" constant="11" id="mSS-Vu-PPA"/>
+                        <constraint firstItem="Qbz-H6-fnA" firstAttribute="top" secondItem="utt-Cd-pAg" secondAttribute="top" constant="15" id="oVr-9a-Rfz"/>
+                        <constraint firstAttribute="height" constant="50" id="rhV-9z-4sp"/>
+                        <constraint firstAttribute="trailing" secondItem="XE1-ET-Nl2" secondAttribute="trailing" id="t2V-I9-rYE"/>
+                        <constraint firstItem="XE1-ET-Nl2" firstAttribute="leading" secondItem="Qbz-H6-fnA" secondAttribute="trailing" constant="16" id="y6k-bn-dPZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STP-Gi-tck" userLabel="ViewTwo">
+                    <rect key="frame" x="10" y="70" width="250" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCPSSlock" translatesAutoresizingMaskIntoConstraints="NO" id="jY9-Pu-fVh">
+                            <rect key="frame" x="13" y="15" width="14" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="MsE-to-kaJ"/>
+                                <constraint firstAttribute="width" constant="14" id="dYy-ES-1HC"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="MsE-to-kaJ"/>
+                                    <exclude reference="dYy-ES-1HC"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1f-Ki-fHn">
+                            <rect key="frame" x="43" y="0.0" width="207" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="AVe-y3-w6o"/>
+                                <constraint firstAttribute="height" constant="50" id="K9N-5g-zPd"/>
+                                <constraint firstAttribute="width" constant="185" id="eXG-Ty-AD0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="eXG-Ty-AD0"/>
+                                </mask>
+                            </variation>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jY9-Pu-fVh" firstAttribute="centerY" secondItem="STP-Gi-tck" secondAttribute="centerY" id="0SN-CZ-17r"/>
+                        <constraint firstItem="f1f-Ki-fHn" firstAttribute="centerY" secondItem="STP-Gi-tck" secondAttribute="centerY" id="58D-GB-cSD"/>
+                        <constraint firstItem="f1f-Ki-fHn" firstAttribute="leading" secondItem="jY9-Pu-fVh" secondAttribute="trailing" constant="16" id="Bml-FJ-VUb"/>
+                        <constraint firstAttribute="height" constant="50" id="J0z-g2-UXq"/>
+                        <constraint firstAttribute="trailing" secondItem="f1f-Ki-fHn" secondAttribute="trailing" id="lTk-mN-HMY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVt-Qc-SkL" userLabel="WCPSSGetNumber">
+                    <rect key="frame" x="270" y="70" width="95" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="5NC-dH-ryF"/>
+                        <constraint firstAttribute="height" constant="50" id="bht-wR-nA5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="获取验证码">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="WCPZHGetnumberButton:" destination="-1" eventType="touchUpInside" id="BeJ-Wq-kv2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GVt-Qc-SkL" firstAttribute="leading" secondItem="STP-Gi-tck" secondAttribute="trailing" constant="10" id="3jW-pD-gqa"/>
+                <constraint firstItem="GVt-Qc-SkL" firstAttribute="centerY" secondItem="STP-Gi-tck" secondAttribute="centerY" id="H8l-tc-DLB"/>
+                <constraint firstItem="STP-Gi-tck" firstAttribute="top" secondItem="utt-Cd-pAg" secondAttribute="bottom" constant="10" id="JW8-fR-c3a"/>
+                <constraint firstItem="STP-Gi-tck" firstAttribute="leading" secondItem="Twc-Kk-eqD" secondAttribute="leading" constant="10" id="Mca-VT-ttc"/>
+                <constraint firstItem="utt-Cd-pAg" firstAttribute="top" secondItem="Twc-Kk-eqD" secondAttribute="top" constant="10" id="Mty-QZ-BEA"/>
+                <constraint firstAttribute="trailing" secondItem="utt-Cd-pAg" secondAttribute="trailing" constant="10" id="NRG-gn-SrQ"/>
+                <constraint firstAttribute="trailing" secondItem="GVt-Qc-SkL" secondAttribute="trailing" constant="10" id="lE8-Ed-QwU"/>
+                <constraint firstAttribute="trailing" secondItem="STP-Gi-tck" secondAttribute="trailing" constant="117" id="lsl-Sa-nBP"/>
+                <constraint firstItem="jY9-Pu-fVh" firstAttribute="centerX" secondItem="Qbz-H6-fnA" secondAttribute="centerX" id="mLR-02-LLd"/>
+                <constraint firstItem="utt-Cd-pAg" firstAttribute="leading" secondItem="Twc-Kk-eqD" secondAttribute="leading" constant="10" id="psb-y6-j7p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="lsl-Sa-nBP"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="279.5" y="304.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WCPSSZHPdevice-tablet" width="17" height="20"/>
+        <image name="WCPSSlock" width="14" height="20"/>
+    </resources>
+</document>

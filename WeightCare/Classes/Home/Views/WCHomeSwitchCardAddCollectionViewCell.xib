@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WCHomeSwitchCardAddCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQR-nq-wJm">
+                        <rect key="frame" x="0.0" y="172" width="250" height="11"/>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="tMI-lA-uPm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wd-IG-CUN">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="172"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_homeSwitchCardAddPlus" translatesAutoresizingMaskIntoConstraints="NO" id="7ht-DF-I27">
+                                <rect key="frame" x="99" y="60" width="53" height="53"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7ht-DF-I27" firstAttribute="centerY" secondItem="4Wd-IG-CUN" secondAttribute="centerY" id="3UX-xy-gpu"/>
+                            <constraint firstItem="7ht-DF-I27" firstAttribute="centerX" secondItem="4Wd-IG-CUN" secondAttribute="centerX" id="ypE-jE-LRY"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtp-HS-GHW">
+                        <rect key="frame" x="0.0" y="172" width="250" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="添加管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8X1-03-Lhs">
+                                <rect key="frame" x="89" y="24" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8X1-03-Lhs" firstAttribute="centerX" secondItem="Xtp-HS-GHW" secondAttribute="centerX" id="Lk3-HG-CkZ"/>
+                            <constraint firstItem="8X1-03-Lhs" firstAttribute="centerY" secondItem="Xtp-HS-GHW" secondAttribute="centerY" id="X3C-hm-qn6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Xtp-HS-GHW" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.28" id="AaI-pz-Pm2"/>
+                <constraint firstItem="Xtp-HS-GHW" firstAttribute="top" secondItem="4Wd-IG-CUN" secondAttribute="bottom" id="Een-ZS-zf9"/>
+                <constraint firstItem="rQR-nq-wJm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JH9-64-OaC"/>
+                <constraint firstItem="4Wd-IG-CUN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="P4P-Sa-zQD"/>
+                <constraint firstAttribute="bottom" secondItem="Xtp-HS-GHW" secondAttribute="bottom" constant="8" id="Q87-lL-pJz"/>
+                <constraint firstItem="rQR-nq-wJm" firstAttribute="top" secondItem="4Wd-IG-CUN" secondAttribute="bottom" id="Y3O-63-GZ7"/>
+                <constraint firstItem="4Wd-IG-CUN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y5W-xS-5DY"/>
+                <constraint firstItem="Xtp-HS-GHW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bGD-ls-CoK"/>
+                <constraint firstItem="4Wd-IG-CUN" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="bqG-LX-Chn"/>
+                <constraint firstItem="Xtp-HS-GHW" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="tOd-V7-xRv"/>
+                <constraint firstAttribute="trailing" secondItem="rQR-nq-wJm" secondAttribute="trailing" id="zGm-Dg-e5l"/>
+            </constraints>
+            <size key="customSize" width="123" height="140"/>
+            <connections>
+                <outlet property="grayView" destination="Xtp-HS-GHW" id="fyj-kw-Wus"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="217"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_homeSwitchCardAddPlus" width="53" height="53"/>
+    </resources>
+</document>

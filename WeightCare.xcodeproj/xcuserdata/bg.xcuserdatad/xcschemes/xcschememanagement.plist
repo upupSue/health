@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>WatchHealth (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>WatchHealth (Glance).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>WatchHealth (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>WatchHealth.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>WeightCare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6B43F9041D2FCCF4009A7DD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B43F91D1D2FCCF4009A7DD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B43F9281D2FCCF4009A7DD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6DE5DAB1D45E23100BA48C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
