@@ -1832,7 +1832,7 @@
 				TargetAttributes = {
 					6B43F9041D2FCCF4009A7DD9 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -2600,7 +2600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.zust.dm.weightcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2653,7 +2653,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.zust.dm.weightcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
